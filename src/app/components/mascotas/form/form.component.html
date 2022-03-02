@@ -1,0 +1,33 @@
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="text-center">{{ titulo }}
+                        <!--div *ngIf="loading" class="spinner-border float-right" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div-->
+                    </h3>
+                    <form class="row g-3 needs-validation">
+                        <div class="col-md-6 position-relative">
+                            <label for="validationTooltip01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationTooltip01" name="nombre" [(ngModel)]="item.nombre" required>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <label for="validationTooltip02" class="form-label">Tipo</label>
+                            <input type="text" class="form-control" id="validationTooltip02" name="tipo" [(ngModel)]="item.tipo" required>
+                        </div>
+                        <div class="col-md-12 position-relative">
+                            <label for="validationTooltip03" class="form-label">Color</label>
+                            <input type="text" class="form-control" id="validationTooltip03" name="color" [(ngModel)]="item.color" required>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="button" (click)="Cancelar()" class="btn btn-warning">Cancelar</button>
+                            <button type="button" (click)="Enviar()" class="btn btn-success">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
